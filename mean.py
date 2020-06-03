@@ -23,3 +23,10 @@ class homie:
 object = homie("First String", 'Second String')
 print(object.__class__)
 
+# I will recap what things I have learned 
+#the dictionary of a an object is accessed through__dict__ attribute of the class
+object.attribute1 = 999999999
+print(object.__dict__)
+print(type(object).__dict__)
+print(type(homie).__dict__['__dict__'].__get__(type,homie)['__dict__'].__get__(type, homie))
+
