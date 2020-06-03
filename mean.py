@@ -14,3 +14,12 @@ current_mean(12)
 print(current_mean(11))
 print(current_mean(10))
 print(current_mean(9))	
+
+class homie:
+	def __init__(self, x:str, y:str) -> None:
+		print(f'The values sent are {x} and {y}' )
+		return None
+
+object = homie("First String", 'Second String')
+print(object.__class__)
+
